@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About India.com</title>
+    <style>
+        /* ================= GLOBAL STYLES ================= */
+        body {
+            background: rgb(225, 245, 242);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 10px 25px;
+        }
+
+        .container {
+            background: rgb(204, 203, 201);
+            border: 6px solid wheat;
+            border-radius: 50px; 
+            margin: 30px auto;
+            padding: 30px 50px;
+            box-shadow: 5px 5px 15px rgb(93, 49, 132);
+            max-width: 1200px;
+        }
+
+        /* ================= NAVIGATION BAR ================= */
+        #b1 {
+            background: rgb(215, 215, 215);
+            border: 3px solid rgb(252, 238, 211); 
+            border-radius: 10px; 
+            box-shadow: 5px 5px 15px rgb(93, 49, 132);
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+            padding: 10px 0;
+            margin: 0 auto 30px auto;
+            max-width: 800px;
+        }
+
+        #item {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ah1 {
+            font-size: 112%;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        .ah1:hover {
+            color: rgb(93, 49, 132);
+        }
+
+        /* ================= HEADINGS ================= */
+        h1 {
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 2px 2px gray;
+            text-align: center;
+            margin-bottom: 22px;
+        }
+
+        h3 {
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        /* ================= IMAGES ================= */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+        }
+
+        #pic1 {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 50px;
+            box-shadow: 3px 3px 30px orange;
+            margin: 0 auto;
+        }
+
+        .map-img {
+            width: 500px;
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* ================= PARAGRAPHS & LINKS ================= */
+        #paragraph {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        #line1 {
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: 3px solid rgb(205, 247, 225);
+            box-shadow: 3px 3px 13px rgb(177, 125, 20);
+            background: rgb(246, 239, 250);
+            border-radius: 8px;
+        }
+
+        #line1 a {
+            color: #000;
+            text-decoration: none;
+        }
+        #line1 a:hover {
+            text-decoration: underline;
+        }
+
+        /* ================= TABLE ================= */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-style: italic;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: rgb(93, 49, 132);
+            color: white;
+            font-size: 21px;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            font-size: 19px;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) td {
+            background-color: rgb(252, 250, 233);
+        }
+
+        tr:nth-child(odd) td {
+            background-color: rgb(226, 250, 242);
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        /* ================= FORM ================= */
+        #b5 {
+            text-align: left;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        #b5 h1 {
+            text-align: center;
+        }
+
+        .lebel {
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .form-row {
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            background-color: rgb(93, 49, 132);
+            color: white;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: rgb(60, 30, 90);
+        }
+
+        /* Clearfix for floated images */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body id="body1">
+
+    <nav id="b1">
+        <ul id="item">
+            <li><a href="#body1" class="ah1">Home</a></li>
+            <li><a href="#b3" class="ah1">About India</a></li>
+            <li><a href="#b4" class="ah1">State & Capital</a></li>
+            <li><a href="#b5" class="ah1">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">    
+        <h1><u>ABOUT INDIA</u></h1>
+        <img src="images.jpg" id="pic1" alt="India Image">
+    </div>
+
+    <div id="b3" class="container clearfix">                
+        <h3>Some Facts About India</h3>
+        <h3>India's Geographical Map</h3>
+        
+        <img src="G.map.jpeg" class="map-img" alt="Geographical Map of India">
+
+        <p id="paragraph">
+            India is my country. It is a land of diverse cultures, languages, and religions living in unity and harmony. 
+            India is also called ‘Bharat’ or ‘Hindustan’ in its native languages. The Indian flag is tricoloured with stripes of 
+            saffron at the top, white in the middle, and green at the bottom with the Ashoka Chakra in the centre. India is
+            an ancient country with a culture that spans thousands of years. India is the world’s largest democracy, having the
+            second-largest population. It has 28 states and 8 union territories. It is the seventh-largest country by landmass.
+            It is surrounded by the great Himalayas in the North and vast oceans to the South. India shares its borders with 
+            neighbouring countries such as China, Pakistan, Bangladesh, Nepal, Bhutan, and Myanmar. Historically the name India can be 
+            traced back to the river Indus, derived from the word ‘Sindhu.’ The country’s national animal is the tiger, and the 
+            national bird is the peacock. India is also known as the land of spirituality and philosophy. People from different
+            countries come to India to seek spiritual guidance. Even the practice of Yoga, now globally popular, originated in ancient India.
+        </p>   
+        
+        <span id="line1">
+            If you want to know more facts about India, you can click on this link: 
+            <a href="https://www.vedantu.com/english/india-essay" target="_blank"><b>More About India</b></a>
+        </span>
+    </div>
+
+    <div id="b4" class="container clearfix">            
+        <h1><u>States & Capitals of India</u></h1>
+        <h3>Political map of India</h3>
+        <img src="P.map.jpeg" class="map-img" alt="Political Map of India">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th><u>S.no</u></th>
+                    <th><u>STATES</u></th>
+                    <th><u>CAPITALS</u></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> <td class="center-text">1</td>  <td>Andhra Pradesh</td> <td>Amaravati</td> </tr>                   
+                <tr> <td class="center-text">2</td>  <td>Assam</td>          <td>Dispur</td> </tr>                    
+                <tr> <td class="center-text">3</td>  <td>Arunachal Pradesh</td><td>Itanagar</td> </tr>              
+                <tr> <td class="center-text">4</td>  <td>Chhattisgarh</td>   <td>Raipur</td> </tr>                        
+                <tr> <td class="center-text">5</td>  <td>Bihar</td>          <td>Patna</td> </tr>        
+                <tr> <td class="center-text">6</td>  <td>Goa</td>            <td>Panaji</td> </tr>             
+                <tr> <td class="center-text">7</td>  <td>Haryana</td>        <td>Chandigarh</td> </tr>         
+                <tr> <td class="center-text">8</td>  <td>Himachal Pradesh</td><td>Shimla</td> </tr>         
+                <tr> <td class="center-text">9</td>  <td>Gujarat</td>        <td>Gandhinagar</td> </tr>                                 
+                <tr> <td class="center-text">10</td> <td>Jharkhand</td>      <td>Ranchi</td> </tr>                    
+                <tr> <td class="center-text">11</td> <td>Karnataka</td>      <td>Bengaluru</td> </tr>            
+                <tr> <td class="center-text">12</td> <td>Kerala</td>         <td>Thiruvananthapuram</td> </tr>             
+                <tr> <td class="center-text">13</td> <td>Madhya Pradesh</td> <td>Bhopal</td> </tr>              
+                <tr> <td class="center-text">14</td> <td>Maharashtra</td>    <td>Mumbai</td> </tr>
+                <tr> <td class="center-text">15</td> <td>Manipur</td>        <td>Imphal</td> </tr>            
+                <tr> <td class="center-text">16</td> <td>Meghalaya</td>      <td>Shillong</td> </tr>                     
+                <tr> <td class="center-text">17</td> <td>Mizoram</td>        <td>Aizawl</td> </tr>    
+                <tr> <td class="center-text">18</td> <td>Nagaland</td>       <td>Kohima</td> </tr> 
+                <tr> <td class="center-text">19</td> <td>Odisha</td>         <td>Bhubaneswar</td> </tr>        
+                <tr> <td class="center-text">20</td> <td>Punjab</td>         <td>Chandigarh</td> </tr>       
+                <tr> <td class="center-text">21</td> <td>Rajasthan</td>      <td>Jaipur</td> </tr>            
+                <tr> <td class="center-text">22</td> <td>Sikkim</td>         <td>Gangtok</td> </tr>                          
+                <tr> <td class="center-text">23</td> <td>Tamil Nadu</td>     <td>Chennai</td> </tr>                 
+                <tr> <td class="center-text">24</td> <td>Telangana</td>      <td>Hyderabad</td> </tr>            
+                <tr> <td class="center-text">25</td> <td>Tripura</td>        <td>Agartala</td> </tr>          
+                <tr> <td class="center-text">26</td> <td>Uttar Pradesh</td>  <td>Lucknow</td> </tr>                    
+                <tr> <td class="center-text">27</td> <td>Uttarakhand</td>    <td>Dehradun</td> </tr>     
+                <tr> <td class="center-text">28</td> <td>West Bengal</td>    <td>Kolkata</td> </tr>          
+            </tbody>     
+        </table>
+    </div> 
+
+    <div id="b5" class="container">  
+        <h1><u>Contact Us</u></h1>
+        <form action="login.page.html">
+            <label for="name" class="lebel">Name</label>
+            <input type="text" id="name" name="MyName" placeholder="UserName" required>          
+
+            <label for="class" class="lebel">Class</label>
+            <input type="text" id="class" name="MyClass" placeholder="Class">                    
+            
+            <label for="state" class="lebel">State</label>
+            <input type="text" id="state" name="Mystate" placeholder="State where you live">     
+
+            <label for="email" class="lebel">Email</label>
+            <input type="email" id="email" name="MyEmail" placeholder="Gmail address" required>    
+
+            <label for="password" class="lebel">Password</label>
+            <input type="password" id="password" name="MyPassword" placeholder="Gmail password" required>
+
+            <label for="date" class="lebel">Date of birth</label>
+            <input type="date" id="date" name="MyDate">                                          
+
+            <div class="form-row">   
+                <span class="lebel">Gender:</span> 
+                Male: <input type="radio" name="MyGender" id="G.male">  
+                Female: <input type="radio" name="MyGender" id="G.female">
+                Other: <input type="radio" name="MyGender" id="G.other">                                           
+            </div>
+
+            <label for="text" class="lebel">Write something about this website:</label>
+            <textarea name="Mytext" id="text" rows="5" required></textarea>  
+
+            <div class="form-row">   
+                <span class="lebel">Are you eligible?:</span> 
+                <input type="checkbox" name="myEligibility" required> 
+            </div>  
+
+            <div>
+                <input type="submit" value="Submit now">                     
+                <input type="reset" value="Reset now">
+            </div>
+        </form>
+    </div>
+            
+    <script>
+        // Asking for the user's name when the page loads
+        setTimeout(() => {
+            let userName = prompt("What is your name?");
+            
+            // Converting input to lowercase makes it easy to check without multiple if-else statements
+            if (userName && userName.toLowerCase() === "shubham") {
+                alert("Welcome Back SHUBHAM!");
+            } else {
+                alert("You are not SHUBHAM. WHO ARE YOU?");
+            }
+        }, 500); // Small delay so the HTML loads before the prompt appears
+    </script>
+                
+</body>
+</html>
